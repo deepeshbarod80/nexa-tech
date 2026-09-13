@@ -7,10 +7,10 @@ const industries = [
 ]
 
 const contactDetails = [
-  { icon: '📍', label: 'Office Address', value: '123 Tech Park, Sector 5, Noida, UP - 201301' },
-  { icon: '📞', label: 'Phone / WhatsApp', value: '+91 98765 43210' },
-  { icon: '✉️', label: 'Email', value: 'hello@nexatech.in' },
-  { icon: '⏰', label: 'Working Hours', value: 'Mon–Sat, 9:00 AM – 7:00 PM IST' },
+  { icon: '📍', label: 'Office Address', value: '24/144, Swarn path, Sector-2, Mansarovar, Jaipur, Rajasthan - 302020' },
+  { icon: '📞', label: 'Phone / WhatsApp', value: '+1-7869993231' },
+  { icon: '✉️', label: 'Email', value: 'contact@aaosainternational.com' },
+  { icon: '⏰', label: 'Working Hours', value: 'Mon–Fri, 9:00 AM – 6:00 PM PST' },
 ]
 
 export default function Contact() {
@@ -101,7 +101,7 @@ export default function Contact() {
                 Chat with our team directly on WhatsApp for a quick response.
               </div>
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/17869993231"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -139,7 +139,7 @@ export default function Contact() {
                     <label htmlFor="name">Full Name *</label>
                     <input
                       id="name" name="name" type="text"
-                      placeholder="Rajesh Kumar"
+                      placeholder="Your Name"
                       value={form.name} onChange={handleChange}
                       required
                     />
@@ -148,7 +148,7 @@ export default function Contact() {
                     <label htmlFor="email">Email Address *</label>
                     <input
                       id="email" name="email" type="email"
-                      placeholder="rajesh@company.com"
+                      placeholder="username@company.com"
                       value={form.email} onChange={handleChange}
                       required
                     />
@@ -160,7 +160,7 @@ export default function Contact() {
                     <label htmlFor="phone">Phone / WhatsApp *</label>
                     <input
                       id="phone" name="phone" type="tel"
-                      placeholder="+91 98765 43210"
+                      placeholder="+1-7869993231"
                       value={form.phone} onChange={handleChange}
                       required
                     />
