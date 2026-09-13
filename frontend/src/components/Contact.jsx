@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 
+const WEB3FORMS_KEY = '3261d850-789f-4d2d-be73-a583075a0800'
+
 const industries = [
   'School Management', 'Hospital Management', 'Hotel Management',
   'Billing & Invoicing', 'Manufacturing ERP', 'Inventory Management',
@@ -15,7 +17,7 @@ const contactDetails = [
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', company: '', industry: '', message: '' })
-  const [status, setStatus] = useState('idle') // idle | loading | success | error
+  const [status, setStatus] = useState('idle')
   const [errorMsg, setErrorMsg] = useState('')
   const sectionRef = useRef(null)
 
@@ -35,20 +37,26 @@ export default function Contact() {
     setStatus('loading')
     setErrorMsg('')
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          subject: `New Enquiry: ${form.industry} — ${form.name}`,
+          from_name: 'AAOSA International Website',
+          ...form,
+        }),
       })
-      if (res.ok) {
+      const data = await res.json()
+      if (data.success) {
         setStatus('success')
+        setForm({ name: '', email: '', phone: '', company: '', industry: '', message: '' })
       } else {
-        const data = await res.json().catch(() => ({}))
-        setErrorMsg(data.error || 'Something went wrong. Please try again.')
+        setErrorMsg(data.message || 'Something went wrong. Please try again.')
         setStatus('error')
       }
     } catch {
-      setErrorMsg('Could not connect to server. Please email us directly.')
+      setErrorMsg('Network error. Please email us directly at contact@aaosainternational.com')
       setStatus('error')
     }
   }
