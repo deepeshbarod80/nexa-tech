@@ -57,7 +57,7 @@ export default function Features() {
       <div className="container">
         <div className="features-layout">
           <div className="features-text reveal">
-            <div className="section-tag">⚡ Why NexaTech</div>
+            <div className="section-tag">⚡ Why Aaosa International</div>
             <h2 className="section-title">
               Everything You Need to <span>Run Smarter</span>
             </h2>

@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react'
 const testimonials = [
   {
     stars: 5,
-    text: 'NexaTech completely transformed how we manage our school. Admissions, fees, attendance, and results — everything is now digital and error-free. Our teachers and parents love the system.',
+    text: 'Aaosa International completely transformed how we manage our school. Admissions, fees, attendance, and results — everything is now digital and error-free. Our teachers and parents love the system.',
     name: 'Rajesh Kumar',
     role: 'Principal, Sunrise Public School, Jaipur',
     avatar: 'RK',
@@ -12,7 +12,7 @@ const testimonials = [
   },
   {
     stars: 5,
-    text: 'Our hospital billing and pharmacy management is 10x faster. The NexaTech team understood our workflows perfectly and delivered exactly what we needed in just 3 weeks.',
+    text: 'Our hospital billing and pharmacy management is 10x faster. The Aaosa International team understood our workflows perfectly and delivered exactly what we needed in just 3 weeks.',
     name: 'Dr. Sunita Patel',
     role: 'Administrator, City Multi-Specialty Hospital',
     avatar: 'SP',
@@ -52,7 +52,7 @@ export default function Testimonials() {
           </h2>
           <p className="section-desc">
             Don't take our word for it — hear from the 200+ business owners and managers
-            who have transformed their operations with NexaTech.
+            who have transformed their operations with Aaosa International.
           </p>
         </div>
 

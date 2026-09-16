@@ -29,7 +29,7 @@ export default function Navbar() {
         <div className="navbar-inner">
           <a href="#home" className="navbar-logo" onClick={() => handleNav('#home')}>
             <span className="logo-icon">N</span>
-            NexaTech
+            Aaosa International
           </a>
 
           <div className="navbar-links">

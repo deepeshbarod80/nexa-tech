@@ -47,7 +47,7 @@ export default function Footer() {
           <div className="footer-brand">
             <div className="logo">
               <span className="logo-icon">N</span>
-              NexaTech Solutions
+              Aaosa International
             </div>
             <p>
               We build custom SaaS software that helps businesses automate operations,
@@ -103,7 +103,7 @@ export default function Footer() {
               <h4 style={{ marginBottom: 12 }}>Contact</h4>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
                 <span style={{ fontSize: '0.85rem' }}>📞 +91 98765 43210</span>
-                <span style={{ fontSize: '0.85rem' }}>✉️ hello@nexatech.in</span>
+                <span style={{ fontSize: '0.85rem' }}>✉️ contact@aaosainternational.com</span>
                 <span style={{ fontSize: '0.85rem' }}>📍 Noida, UP — India</span>
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <div className="footer-bottom-inner">
-          <p>© {new Date().getFullYear()} NexaTech Solutions Pvt. Ltd. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Aaosa International. All rights reserved.</p>
           <div className="footer-bottom-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
