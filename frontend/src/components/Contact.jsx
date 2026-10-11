@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 
-const WEB3FORMS_KEY = '3261d850-789f-4d2d-be73-a583075a0800'
+const WEB3FORMS_KEY = '72785058-453c-4934-985e-efc2cc391b19'
 
 const industries = [
   'School Management', 'Hospital Management', 'Hotel Management',
